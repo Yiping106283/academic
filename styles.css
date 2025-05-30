@@ -1,0 +1,117 @@
+      body {
+      font-family: Arial;
+      font-size: 16px;
+      } 
+
+      div {
+      margin-top: 0px;
+      margin-bottom: 15px;
+      margin-left: auto;
+      margin-right: auto;
+      }
+
+      .pub {
+       padding-left:20px;
+      }
+
+      h2 {
+      padding: 2;
+      margin-top: 30px;
+      margin-bottom: 14px;
+      color: #000000;
+      font-size: 28px;
+      font-weight: normal;
+      }
+
+       h3 {
+      padding: 2;
+      margin-top: 30px;
+      margin-bottom: 14px;
+      color: #000000;
+      font-size: 24px;
+      font-weight: normal;
+      display: inline-block;
+      }
+
+      #pub-options a {
+      cursor: pointer;
+      font-size: 16px;
+      color: #000000; 
+      }
+
+      #pub-options a:hover {
+      color: #2471A3;
+      }
+
+
+      h4 {
+      color: #884ea0; /* Grey color */
+      font-size: 18px; /* Adjust font size if needed */
+      font-weight: bold; /* Adjust font weight if needed */
+      margin-top: 10px; /* Adjust margin if needed */
+      margin-bottom: 10px; /* Adjust margin if needed */
+      }
+
+      p {
+      line-height: 1.6;
+      margin: 0px;
+      }
+
+      .intro {
+      color: #000000;
+      font-weight: normal;
+      line-height: normal;
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+      }
+
+      .title {
+      color: #000000;
+      font-weight: normal;
+      }
+
+      .author {
+      color: #000000;
+      font-weight: normal;
+      }
+
+      .venue {
+      color: #000000;
+      font-weight: normal;
+      }
+
+      .details {
+      color: #000000;
+      font-weight: normal;
+      }
+
+      a:link {
+      color: #2471A3;
+      background-color: transparent;
+      text-decoration: none;
+      }
+
+      a:visited {
+      color: #2471A3;
+      background-color: transparent;
+      text-decoration: none;
+      }
+
+      a:hover {
+      color: #3498DB;
+      }
+
+      a.venue:link{
+      color: #2471A3;
+      font-weight:normal;
+      }
+
+      a.venue:visited {
+      color: #2471A3;
+      }
+
+      a.venue:hover {
+      color: #3498DB;
+      }
+
