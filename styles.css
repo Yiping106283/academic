@@ -44,8 +44,9 @@
       /* Prefer Libertinus, fall back to common serifs */
       font-family: "Libertinus", Georgia, "Times New Roman", Times, serif;
       font-size: 18px;
-      background-color: #FFFCF7; /* very light warm cream (less yellow) */
-      padding-inline: 3.5rem; /* a bit narrower (~56px) */
+      background-color: #FFFCF4; /* ultra-light with a touch more yellow */
+      padding-left: 3rem; /* reduced by another 1rem */
+      padding-right: 0rem; /* reduced by another 1rem (min 0) */
       } 
 
       div {
@@ -108,16 +109,19 @@
       line-height: normal;
       margin-left: auto;
       margin-right: auto;
-      width: 70%;
+      width: 900px; /* wider to reduce side margins */
+      max-width: 900px;
+      min-width: 900px;
+      box-sizing: border-box;
       }
 
       .title {
-      color: #333333; /* slightly softer than pure black */
+      color: #333333; /* dark grey */
       font-weight: 600; /* semi-bold */
       }
 
       .talk-title {
-      color: #333333; /* slightly softer than pure black */
+      color: #333333; /* dark grey */
       font-family: 'Libertinus', serif;
       font-weight: 600; /* SemiBold face */
       }
