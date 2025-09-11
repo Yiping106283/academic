@@ -1,6 +1,51 @@
+      /* Self-hosted Libertinus Serif */
+      @font-face {
+        font-family: "Libertinus";
+        src: url("fonts/Libertinus-regular.woff2") format("woff2");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Libertinus";
+        src: url("fonts/Libertinus-italic.woff2") format("woff2");
+        font-weight: 400;
+        font-style: italic;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Libertinus";
+        src: url("fonts/Libertinus-bold.woff2") format("woff2");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Libertinus";
+        src: url("fonts/Libertinus-semibold.woff2") format("woff2");
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      /* Semibold italic (closest to bold italic available locally) */
+      @font-face {
+        font-family: "Libertinus";
+        src: url("fonts/Libertinus-semibold-italic.woff2") format("woff2");
+        font-weight: 600;
+        font-style: italic;
+        font-display: swap;
+      }
+
       body {
-      font-family: Arial;
-      font-size: 16px;
+      /* Prefer Libertinus, fall back to common serifs */
+      font-family: "Libertinus", Georgia, "Times New Roman", Times, serif;
+      font-size: 18px;
+      background-color: #FFFCF7; /* very light warm cream (less yellow) */
+      padding-inline: 3.5rem; /* a bit narrower (~56px) */
       } 
 
       div {
@@ -19,7 +64,7 @@
       margin-top: 30px;
       margin-bottom: 14px;
       color: #000000;
-      font-size: 28px;
+      font-size: 30px;
       font-weight: normal;
       }
 
@@ -28,7 +73,7 @@
       margin-top: 30px;
       margin-bottom: 14px;
       color: #000000;
-      font-size: 24px;
+      font-size: 26px;
       font-weight: normal;
       display: inline-block;
       }
@@ -46,7 +91,7 @@
 
       h4 {
       color: #884ea0; /* Grey color */
-      font-size: 18px; /* Adjust font size if needed */
+      font-size: 20px; /* Adjust font size if needed */
       font-weight: bold; /* Adjust font weight if needed */
       margin-top: 10px; /* Adjust margin if needed */
       margin-bottom: 10px; /* Adjust margin if needed */
@@ -67,8 +112,14 @@
       }
 
       .title {
-      color: #000000;
-      font-weight: normal;
+      color: #333333; /* slightly softer than pure black */
+      font-weight: 600; /* semi-bold */
+      }
+
+      .talk-title {
+      color: #333333; /* slightly softer than pure black */
+      font-family: 'Libertinus', serif;
+      font-weight: 600; /* SemiBold face */
       }
 
       .author {
@@ -84,6 +135,14 @@
       .details {
       color: #000000;
       font-weight: normal;
+      }
+
+      /* Section divider matching content width and warm theme */
+      .section-divider {
+      border: 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.12);
+      width: 70%;
+      margin: 24px auto;
       }
 
       a:link {
@@ -114,4 +173,3 @@
       a.venue:hover {
       color: #3498DB;
       }
-
