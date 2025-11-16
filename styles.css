@@ -40,6 +40,10 @@
         font-display: swap;
       }
 
+      html {
+      scroll-behavior: smooth;
+      }
+
       body {
       /* Prefer Libertinus, fall back to common serifs */
       font-family: "Libertinus", Georgia, "Times New Roman", Times, serif;
@@ -79,17 +83,6 @@
       display: inline-block;
       }
 
-      #pub-options a {
-      cursor: pointer;
-      font-size: 16px;
-      color: #000000; 
-      }
-
-      #pub-options a:hover {
-      color: #2471A3;
-      }
-
-
       h4 {
       color: #884ea0; /* Grey color */
       font-size: 20px; /* Adjust font size if needed */
@@ -124,6 +117,100 @@
       color: #333333; /* dark grey */
       font-family: 'Libertinus', serif;
       font-weight: 600; /* SemiBold face */
+      }
+
+      .nav-intro {
+      padding-top: 6px;
+      padding-bottom: 0;
+      margin-top: 24px;
+      clear: both; /* sit below floated portrait */
+      }
+
+      .section-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.03);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 999px;
+      padding: 6px 14px;
+      width: calc(100% - 280px);
+      box-sizing: border-box;
+      margin-left: 0;
+      margin-right: 280px;
+      line-height: 1.2;
+      }
+
+      .section-nav a {
+      color: #4f2f8f;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 4px 12px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      transition: background-color 0.2s ease, border-color 0.2s ease;
+      }
+
+      .section-nav a:hover {
+      background-color: #fff;
+      border-color: rgba(0, 0, 0, 0.12);
+      }
+
+      .section-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-end;
+      gap: 12px;
+      margin-bottom: 14px;
+      }
+
+      .section-header h3 {
+      margin-top: 30px;
+      margin-bottom: 0;
+      }
+
+      .section-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin-left: 8px;
+      }
+
+      .section-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      padding: 4px 14px;
+      margin: 0;
+      position: relative;
+      top: 14.5px; /* nudge down to visually align with h3 text */
+      border-radius: 999px;
+      border: 1px solid rgba(0, 0, 0, 0.18);
+      background-color: #fffdf8;
+      color: #4f2f8f;
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.2;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+      }
+
+      .section-button:hover,
+      .section-button:focus-visible {
+      background-color: #fff;
+      border-color: rgba(0, 0, 0, 0.3);
+      color: #341c6a;
+      outline: none;
+      }
+
+      .section-button:active {
+      background-color: #f2ecff;
       }
 
       .author {

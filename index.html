@@ -72,7 +72,7 @@
   </head>
 
 
-  <body> 
+  <body id="top"> 
 
     <div class="intro"> 
     <br> 
@@ -80,35 +80,44 @@
     
     <h2>Yiping Ma</h2> 
   
-    <img src="Yiping-March-2025.jpg" alt="Portrait of Yiping Ma" style="float: right; padding-top: 25px; padding-left: 25px; padding-right:15px; padding-bottom: 30px; max-width: 200px; height: auto;" loading="lazy">
+    <img src="Yiping-March-2025.jpg" alt="Portrait of Yiping Ma" style="float: right; padding-top: 10px; padding-left: 25px; padding-right: 45px; padding-bottom: 30px; max-width: 190px; height: auto;" loading="lazy">
     
     <br>
-    <p> Welcome to my homepage! I am a postdoc at UC Berkeley's <a href="https://sky.cs.berkeley.edu/">Sky Computing Lab</a>, hosted by <a href="https://people.eecs.berkeley.edu/~raluca/">Raluca Ada Popa</a>. My research explores security and privacy challenges in computer systems and AI, and develops solutions using insights and tools from cryptography. 
+    <p> Welcome to my homepage! I am a postdoc in <a href="https://sky.cs.berkeley.edu/">Sky Lab</a> at UC Berkeley, hosted by <a href="https://people.eecs.berkeley.edu/~raluca/">Raluca Ada Popa</a>. My research explores security and privacy challenges in computer systems and AI, and develops solutions using insights and tools from cryptography. 
     </p>
     <br>
     <p>
-    I completed my PhD at UPenn with my advisors <a href="https://www.cis.upenn.edu/~sga001/">Sebastian Angel</a> and <a href="https://en.wikipedia.org/wiki/Tal_Rabin">Tal Rabin</a>, and also worked closely with <a href="https://simons.berkeley.edu/people/yuval-ishai">Yuval Ishai</a> at Technion and <a href="https://scholar.google.com/citations?user=5e-gHjMAAAAJ&hl=en">Antigoni Polychroniadou</a> at JP Morgan AI Research. My PhD research was partly supported by a <a href="https://www.microsoft.com/en-us/research/academic-program/phd-fellowship/2022-recipients/">Microsoft Research PhD Fellowship</a>, and received the 2025 <a href="https://grad.seas.upenn.edu/student-handbook/graduate-student-awards/">Morris and Dorothy Rubinoff Award</a> at UPenn.
-    </p>
-    <br>
-    <p> 
-    Prior to PhD, I graduated with a BS in computer science from <a href="https://cfcs.pku.edu.cn/english/research/turing_program/introduction1/index.htm">Turing Program</a> at Peking University in 2020.
+    In 2025, I completed my PhD at UPenn, where I was very fortunate to be advised by <a href="https://en.wikipedia.org/wiki/Tal_Rabin">Tal Rabin</a> and <a href="https://www.cis.upenn.edu/~sga001/">Sebastian Angel</a> and work closely with  <a href="https://scholar.google.com/citations?user=5e-gHjMAAAAJ&hl=en">Antigoni Polychroniadou</a> and <a href="https://simons.berkeley.edu/people/yuval-ishai">Yuval Ishai</a>. 
+    I graduated from <a href="https://cfcs.pku.edu.cn/english/research/turing_program/introduction1/index.htm">Turing Program</a> at Peking University in 2020.
     </p> 
     </div> 
 
 
     <div class="intro">
-      <p><strong>Note</strong>: My UPenn email no longer works. You can reach me at [firstnamelastname]@berkeley.edu.</p>
+      <p><em>My UPenn email is inactive.</em> You can reach me at [firstnamelastname]@berkeley.edu.</p>
+    </div>
+
+    <div class="intro nav-intro">
+      <nav class="section-nav" aria-label="Section navigation">
+        <a href="#top">About</a>
+        <a href="#pubs">Publications</a>
+        <a href="#talks">Talks</a>
+        <a href="#services">Services</a>
+        <a href="#awards">Selected Awards</a>
+      </nav>
     </div>
 
 
     <div class="intro">
-    <br>
-    <h3 id="pubs"> Publications</h3>
-    <span id="pub-options" >
-	    [<a onclick="loadByYear()">by year</a>]
-	    [<a onclick="loadByTopic()">by topic</a>]
-    </span>
-   
+    <div class="section-header">
+      <h3 id="pubs"> Publications</h3>
+      <div class="section-actions">
+        <button type="button" class="section-button" onclick="loadByYear()">By year</button>
+        <button type="button" class="section-button" onclick="loadByTopic()">By topic</button>
+        <a class="section-button" href="#top">Back to top</a>
+      </div>
+    </div>
+
     <div id="publication-content">
     <h4> 2025 </h4>
     <div class="pub">
@@ -196,12 +205,16 @@
       </div>
 
       </div>  
-    </div>
-
+    </div> 
 
     <div class="intro">
-    <h3 id="talks"> Talks </h3>
-    <p><span class="talk-title">"Lightweight Privacy for and from the Masses"</span> [<a href="yiping_ma_dissertation.pdf">thesis</a>]
+    <div class="section-header">
+      <h3 id="talks"> Talks </h3>
+      <div class="section-actions">
+        <a class="section-button" href="#top">Back to top</a>
+      </div>
+    </div>
+    <p><span class="talk-title">"Lightweight Privacy for and from the Masses"</span> [<a href="https://yiping106283.github.io/academic/yiping_ma_dissertation.pdf">thesis</a>]
     <br>&nbsp;&nbsp;&nbsp;&nbsp;Dissertation Defense, UPenn, Philadelphia, PA, April 2025
     </p>
     <br>
@@ -230,7 +243,7 @@
     <p><span class="talk-title">"Flamingo: Multi-Round Single-Server Secure Aggregation with Applications to Private Federated Learning"</span>
     <br>&nbsp;&nbsp;&nbsp;&nbsp;AWS (virtual), February 2024
     <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.cylab.cmu.edu/">CMU CyLab</a> Seminar, Pittsburgh, PA, October 2023
-    <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://crypto-ppml.github.io/2023/">Privacy-Preserving Machine Learning Workshop</a>, Santa Barbara, CA, August 2023 <!--- [<a href="https://youtu.be/6tregqpSVOU?t=1230">video</a>] ---!>
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://crypto-ppml.github.io/2023/">Privacy-Preserving Machine Learning Workshop</a>, Santa Barbara, CA, August 2023  
     <br>&nbsp;&nbsp;&nbsp;&nbsp;NYU, New York, NY, July 2023
     <br>&nbsp;&nbsp;&nbsp;&nbsp;IEEE S&P (Oakland), San Francisco, CA, May 2023 [<a href="flamingo-sp-2023.pdf">slides</a>, <a href="https://www.youtube.com/watch?v=Jtij2oJax14">video</a>]
     <br>&nbsp;&nbsp;&nbsp;&nbsp;UMass Amherst (virtual), May 2023
@@ -238,11 +251,12 @@
     </p>
     <br>
     <p><span class="talk-title">"Single-Server Private Information Retrieval (and Secure Aggregation) in the Shuffle Model"</span>
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;Purdue CS Colloquium, West Lafayette, IN, November 2025
     <br>&nbsp;&nbsp;&nbsp;&nbsp;NYU, New York, NY, April, 2025
     <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://theoryseminar.cs.brown.edu/">Brown Theory Seminar</a>, Providence, RI, April 2025
     <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://css.csail.mit.edu/security-seminar/">MIT Security Seminar</a>, Boston, MA, April 2025
     <br>&nbsp;&nbsp;&nbsp;&nbsp;ACM CCS, Salt Lake City, UT, October 2024 [<a href="shuffle-pir-ccs.pdf">slides</a> for computational results]
-    <br>&nbsp;&nbsp;&nbsp;&nbsp;Northwestern University, Evanston, IL, October 2024 [<a href="shuffle-pir-northwestern.pdf">slides</a> combined for information-theoretic and computational results]
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;Northwestern University, Evanston, IL, October 2024 [<a href="shuffle-pir-northwestern.pdf">slides</a>]
     <br>&nbsp;&nbsp;&nbsp;&nbsp;Workshop in PIR, Privacy Enhancing Technologies Symposium (virtual), July 2024 
     <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.jpmorgan.com/technology/artificial-intelligence/initiatives/algocrypt-center-of-excellence">AlgoCRYPT</a> Seminar, J.P. Morgan, New York, NY, June 2024
     <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://nycryptoday.wordpress.com/2022/09/">NY CryptoDay</a>, New York, NY, October 2022 [<a href="shuffle-pir-cryptoday.pdf">slides</a> for information-theoretic results]
@@ -260,14 +274,35 @@
     </p>
     </div>
 
-<!---    <div class="intro">
-    <h3 id="experience">Experience</h3>
-    <p>I was lucky to visit and intern at multiple places during my study. In my PhD time, I spent a wonderful spring at Technion visiting Yuval Ishai. In the past summers, I interned at J.P. Morgan AI Research, hosted by Antigoni Polychroniadou. In my undergrad, I interned at Alibaba Gemini Lab (now <a href="https://antcplab.github.io/docs/about/">Ant CP Lab</a>) hosted by Cheng Hong, and at EPFL hosted by Jean-Pierre Hubaux via <a href="https://summer.epfl.ch/">Summer@EPFL</a> program.
-    </p>
-    </div> ---!>
+    <div class="intro">
+    <div class="section-header">
+      <h3 id="services"> Services </h3>
+      <div class="section-actions">
+        <a class="section-button" href="#top">Back to top</a>
+      </div>
+    </div>
+      <p><strong>Organization:</strong> UPenn Security and Privacy Seminar (2023&ndash;2024), UPenn Distributed Systems Seminar (2025)</p>
+      <p><strong>Teaching:</strong> Cryptography (2021&ndash;2022), Blockchain (2023), Algorithms (2019), Discrete Mathematics (2019)</p>
+    </div>
+
+    <div class="intro">
+      <div class="section-header">
+        <h3 id="awards"> Selected Awards </h3>
+        <div class="section-actions">
+          <a class="section-button" href="#top">Back to top</a>
+        </div>
+      </div>
+      <p>Morris and Dorothy Rubinoff Award (best dissertation research), University of Pennsylvania (2025)</p>
+      <p>Selected for EECS Rising Stars (2023)</p>
+      <p>Microsoft Research PhD Fellowship (for 2023&ndash;2025) </p>
+      <p>Academic Excellence Award, Peking University (2019)</p>
+      <p>Mount Everest Scholarship, First Honors, Peking University (2018)</p>
+    </div>
+
+
 
     <br>
-    <br>
+    
  
   </body>
   
