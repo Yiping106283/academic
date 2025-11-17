@@ -86,7 +86,7 @@
       h4 {
       color: #884ea0; /* Grey color */
       font-size: 20px; /* Adjust font size if needed */
-      font-weight: bold; /* Adjust font weight if needed */
+      font-weight: 600; /* Adjust font weight if needed */
       margin-top: 10px; /* Adjust margin if needed */
       margin-bottom: 10px; /* Adjust margin if needed */
       }
@@ -129,13 +129,13 @@
       .section-nav {
       display: flex;
       flex-wrap: wrap;
-      gap: 16px;
+      gap: 42px;
       justify-content: center;
       background-color: rgba(0, 0, 0, 0.03);
       border: 1px solid rgba(0, 0, 0, 0.08);
-      border-radius: 999px;
-      padding: 6px 14px;
-      width: calc(100% - 280px);
+      border-radius: 200px;
+      padding: 0px 12px;
+      width: calc(100% - 50px);
       box-sizing: border-box;
       margin-left: 0;
       margin-right: 280px;
