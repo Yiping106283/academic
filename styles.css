@@ -133,7 +133,7 @@
       justify-content: center;
       background-color: rgba(0, 0, 0, 0.03);
       border: 1px solid rgba(0, 0, 0, 0.08);
-      border-radius: 200px;
+      border-radius: 10px;
       padding: 0px 12px;
       width: calc(100% - 50px);
       box-sizing: border-box;
@@ -143,18 +143,25 @@
       }
 
       .section-nav a {
-      color: #4f2f8f;
       font-size: 18px;
       font-weight: 500;
       padding: 4px 12px;
-      border-radius: 999px;
+      border-radius: 6px;
       border: 1px solid transparent;
       transition: background-color 0.2s ease, border-color 0.2s ease;
       }
 
+      .section-nav a:link,
+      .section-nav a:visited {
+      color: #2471A3;
+      background-color: transparent;
+      text-decoration: none;
+      }
+
       .section-nav a:hover {
-      background-color: #fff;
-      border-color: rgba(0, 0, 0, 0.12);
+      color: #2471A3;
+      background-color: rgba(36, 113, 163, 0.08);
+      border-color: rgba(36, 113, 163, 0.22);
       }
 
       .research-intro {
@@ -188,6 +195,82 @@
       font-weight: 600;
       }
 
+      .research-topic-tooltip {
+      display: inline-block;
+      position: relative;
+      border-radius: 4px;
+      outline: none;
+      }
+
+      .research-topic-link:link,
+      .research-topic-link:visited {
+      color: #333333;
+      text-decoration: none;
+      }
+
+      .research-topic-tooltip:hover,
+      .research-topic-tooltip:focus-within {
+      background-color: rgba(136, 78, 160, 0.08);
+      }
+
+      .research-topic-tooltip-text {
+      position: absolute;
+      top: calc(100% + 9px);
+      left: 0;
+      z-index: 12;
+      width: 410px;
+      max-width: 72vw;
+      padding: 10px 12px;
+      border: 1px solid rgba(0, 0, 0, 0.14);
+      border-radius: 6px;
+      background-color: #fffdf8;
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.13);
+      color: #333333;
+      font-size: 15px;
+      font-weight: normal;
+      line-height: 1.38;
+      text-align: left;
+      transform: translateY(4px);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.16s ease, transform 0.16s ease, visibility 0.16s ease;
+      }
+
+      .research-topic-tooltip-text::before {
+      content: "";
+      position: absolute;
+      bottom: 100%;
+      left: 22px;
+      width: 9px;
+      height: 9px;
+      border-left: 1px solid rgba(0, 0, 0, 0.14);
+      border-top: 1px solid rgba(0, 0, 0, 0.14);
+      background-color: #fffdf8;
+      transform: translateY(5px) rotate(45deg);
+      }
+
+      .research-topic-tooltip-text span {
+      display: block;
+      margin-bottom: 5px;
+      }
+
+      .research-topic-tooltip-text span:last-child {
+      margin-bottom: 0;
+      }
+
+      .research-topic-tooltip-text strong {
+      color: #884ea0;
+      font-weight: 600;
+      }
+
+      .research-topic-tooltip:hover .research-topic-tooltip-text,
+      .research-topic-tooltip:focus-within .research-topic-tooltip-text {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+      }
+
       .section-header {
       display: flex;
       flex-wrap: wrap;
@@ -219,7 +302,7 @@
       margin: 0;
       position: relative;
       top: 14.5px; /* nudge down to visually align with h3 text */
-      border-radius: 999px;
+      border-radius: 6px;
       border: 1px solid rgba(0, 0, 0, 0.18);
       background-color: #fffdf8;
       color: #4f2f8f;
@@ -234,14 +317,32 @@
 
       .section-button:hover,
       .section-button:focus-visible {
-      background-color: #fff;
-      border-color: rgba(0, 0, 0, 0.3);
+      background-color: rgba(136, 78, 160, 0.08);
+      border-color: rgba(136, 78, 160, 0.28);
       color: #341c6a;
       outline: none;
       }
 
       .section-button:active {
-      background-color: #f2ecff;
+      background-color: rgba(136, 78, 160, 0.14);
+      }
+
+      a.section-button:link,
+      a.section-button:visited {
+      color: #2471A3;
+      background-color: #fffdf8;
+      text-decoration: none;
+      }
+
+      a.section-button:hover,
+      a.section-button:focus-visible {
+      color: #2471A3;
+      background-color: rgba(36, 113, 163, 0.08);
+      border-color: rgba(36, 113, 163, 0.28);
+      }
+
+      a.section-button:active {
+      background-color: rgba(36, 113, 163, 0.14);
       }
 
       .author {
@@ -270,7 +371,7 @@
       justify-content: center;
       padding: 1px 8px;
       border: 1px solid rgba(36, 113, 163, 0.32);
-      border-radius: 999px;
+      border-radius: 6px;
       background-color: rgba(36, 113, 163, 0.06);
       font-size: 0.88em;
       line-height: 1.25;
