@@ -119,6 +119,36 @@
       font-weight: 600; /* SemiBold face */
       }
 
+      .name-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 24px;
+      margin-top: 30px;
+      margin-bottom: 14px;
+      padding-right: 65px;
+      box-sizing: border-box;
+      }
+
+      .name-row h2 {
+      margin-top: 0;
+      margin-bottom: 0;
+      flex-shrink: 0;
+      }
+
+      .job-market-note {
+      margin-bottom: 2px;
+      color: #333333;
+      font-size: 17px;
+      text-align: right;
+      }
+
+      .job-market-star {
+      color: #884ea0;
+      font-style: normal;
+      margin-right: 5px;
+      }
+
       .nav-intro {
       padding-top: 6px;
       padding-bottom: 0;
