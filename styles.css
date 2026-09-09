@@ -465,6 +465,72 @@
       visibility: visible;
       }
 
+      /* Click-to-open collaboration note beside the Atlas link. */
+      .atlas-status {
+      display: inline-block;
+      position: relative;
+      }
+
+      #atlas-status-button {
+      padding: 0 3px;
+      border: 0;
+      background: transparent;
+      color: #884ea0;
+      font-family: inherit;
+      font-size: 15px;
+      font-style: italic;
+      text-decoration: underline dotted;
+      text-underline-offset: 3px;
+      cursor: pointer;
+      }
+
+      #atlas-status-button:hover,
+      #atlas-status-button[aria-expanded="true"] {
+      color: #59336b;
+      }
+
+      #atlas-status-button:focus-visible,
+      .atlas-status-note a:focus-visible {
+      outline: 2px solid #884ea0;
+      outline-offset: 3px;
+      }
+
+      .atlas-status-note {
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      z-index: 12;
+      box-sizing: border-box;
+      width: 330px;
+      max-width: 75vw;
+      padding: 12px 14px;
+      border: 1px solid rgba(0, 0, 0, 0.14);
+      border-radius: 6px;
+      background: #fffdf8;
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.13);
+      color: #333333;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 1.45;
+      text-align: left;
+      }
+
+      .atlas-status-note[hidden] {
+      display: none;
+      }
+
+      @media (max-width: 600px) {
+        .atlas-status-note {
+        position: fixed;
+        top: auto;
+        bottom: 16px;
+        left: 16px;
+        right: 16px;
+        width: auto;
+        max-width: none;
+        }
+      }
+
       /* Section divider matching content width and warm theme */
       .section-divider {
       border: 0;

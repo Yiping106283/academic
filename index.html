@@ -38,6 +38,33 @@
                 $('#publication-content').html(originalContent);
             }
         }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const status = document.querySelector('.atlas-status');
+            const button = document.getElementById('atlas-status-button');
+            const note = document.getElementById('atlas-status-note');
+
+            function showNote(open) {
+                button.setAttribute('aria-expanded', String(open));
+                note.hidden = !open;
+            }
+
+            button.addEventListener('click', function () {
+                showNote(note.hidden);
+            });
+            document.addEventListener('click', function (event) {
+                if (!status.contains(event.target)) showNote(false);
+            });
+            document.addEventListener('keydown', function (event) {
+                if (event.key === 'Escape' && !note.hidden) {
+                    showNote(false);
+                    button.focus();
+                }
+            });
+            status.addEventListener('focusout', function (event) {
+                if (event.relatedTarget && !status.contains(event.relatedTarget)) showNote(false);
+            });
+        });
     </script>
     <script type="application/ld+json">
     {
@@ -119,7 +146,7 @@
         <li><strong>Privacy-preserving systems:</strong> building systems that make strong privacy practical at scale.</li>
         <li><strong>Theoretical foundations:</strong> developing the foundations behind modern privacy techniques.</li>
       </ul>
-      <p style="margin-top: 12px;"><a href="https://yiping106283.github.io/cryptography-atlas/">Cryptography Atlas</a>: an interactive guide to cryptographic literature and open problems.</p>
+      <p style="margin-top: 12px;"><a href="https://yiping106283.github.io/cryptography-atlas/">Cryptography Atlas</a> <span class="atlas-status"><button type="button" id="atlas-status-button" aria-expanded="false" aria-controls="atlas-status-note">Work in progress</button><span class="atlas-status-note" id="atlas-status-note" role="note" hidden>If you'd like to collaborate or help verify and refine the atlas, please <a href="mailto:yipingma@berkeley.edu">email me</a>.</span></span>: an interactive guide to cryptographic literature and open problems.</p>
     </div>
 
 
