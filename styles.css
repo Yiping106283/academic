@@ -479,8 +479,7 @@
       font-family: inherit;
       font-size: 15px;
       font-style: normal;
-      text-decoration: underline dotted;
-      text-underline-offset: 3px;
+      text-decoration: none;
       cursor: pointer;
       }
 
